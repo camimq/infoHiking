@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/base.css">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="/css/hikingList.css">
+        <title>MNTN | Hiking List</title>
+    </head>
+    <body>
+        <header class="mainHeader">
+            <img src="/img/logo.svg" alt="Logo for MNTN" class="mainHeader__logo">
+            <ul class="mainHeader_nav">
+                <li class="mainHeader__navItems"><a href="#" class="mainHeader__navItems--link">Your Hiking List</a></li>
+                <li class="mainHeader__navItems"><a href="#" class="mainHeader__navItems--link">Equipment</a></li>
+                <li class="mainHeader__navItems"> <a href="#" class="mainHeader__navItems--link"> About Us</a></li>
+                <li class="mainHeader__navItems"> <a href="#" class="mainHeader__navItems--link"> Blog</a></li>
+            </ul>
+            <a href="#" class="mainHeader__account"><img src="/img/userCart.svg">Account</a>
+        </header>
+        <main class="container">
+            <section class="form">
+                <h1 class="form__title">Add a new Hiking Location to your list</h1>
+                <form action="#" class="newHike">
+                    <label for="location" class="newHike__label">Location</label>
+                    <input type="text" name="location" class="newHike__input" required>
+
+                    <label for="level" class="newHike__label">Level</label>
+                    <select name="level" id="leve" class="newHike__input" required>
+                        <option class="newHike__option" value="Easy">Easy</option>
+                        <option class="newHike__option" value="Medium">Medium</option>
+                        <option class="newHike__option" value="Hard">Hard</option>
+                    </select>
+                    
+                    <input type="button" class="newHike__button" value="Add to list">
+                </form>
+            </section>
+
+            <section class="myList">
+                <table class="myList__table">
+                    <tr>
+                        <th>Location</th>
+                        <th>Difficulty</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <th>Bermuda</th>
+                        <th>Hard</th>
+                        <th>Done</th>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <footer class="footer">
+            <img src="/img/logo.svg" alt="Logo to MNTN" class="footer__logo">
+            <p class="footer__text">Get out there & discover your next slope, mountain & destination!</p>
+            <p class="footer__text">Copyright 2021 MNTN, Inc.</p>
+            
+            <div class="footer_nav">
+                <h4 class="footer__navTitle">More on The Blog</h4>
+                <ul>
+                    <li class="footer__navItems"><a href="#" class="footer__navItems--link">About MNTN</a></li>
+                    <li class="footer__navItems"><a href="#" class="footer__navItems--link">Contributors & Writters</a></li>
+                    <li class="footer__navItems"><a href="#" class="footer__navItems--link">Write For Us</a></li>
+                    <li class="footer__navItems"><a href="#" class="footer__navItems--link">Contact Us</a></li>
+                    <li class="footer__navItems"><a href="#" class="footer__navItems--link">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__nav2">
+                <h4 class="footer__navTitle">More on MNTN</h4>
+                <ul>
+                    <li class="footerNavItems"><a href="#" class="footernavItems--link">The Team</a></li>
+                    <li class="footerNavItems"><a href="#" class="footernavItems--link">Jobs</a></li>
+                    <li class="footerNavItems"><a href="#" class="footernavItems--link">Press</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
