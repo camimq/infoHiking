@@ -7,35 +7,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>MNTN | Login</title>
 </head>
 <body>
-    <header class="mainHeader">
+    <header class="mainHeader container">
         <img src="/img/logo.svg" alt="Logo for MNTN" class="mainHeader__logo">
-        <ul class="mainHeader_nav">
-            <li class="mainHeader__navItems"><a href="#" class="mainHeader__navItems--link">Equipment</a></li>
-            <li class="mainHeader__navItems"> <a href="#" class="mainHeader__navItems--link"> About Us</a></li>
-            <li class="mainHeader__navItems"> <a href="#" class="mainHeader__navItems--link"> Blog</a></li>
-        </ul>
-        <a href="#" class="mainHeader__account"><img src="/img/userCart.svg">Account</a>
+        <nav class="mainHeader__nav">
+            <a href="#" class="mainHeader__nav--link">Equipment</a>
+            <a href="#" class="mainHeader__nav--link"> About Us</a>
+            <a href="#" class="mainHeader__nav--link"> Blog</a>
+        </nav>
+        <div class="mainHeader__account">
+            <img class="mainHeader__account--img" src="/img/userCart.svg">
+            <a href="#" class="mainHeader__account--link">Account</a>
+        </div>
     </header>
-    <section class="login">
-        <form action="#" class="login__form">
-            <label for="email" class="login__label">E-mail:</label>
-            <input type="email" name="email" class="login__input" required>
 
-            <label for="password" class="login__label">Password</label>
-            <input type="password" name="password" class="login__input" required>
+    <main class="container">
+        <section class="login">
+            <form action="#" class="login__form">
+                <label for="email" class="login__label">E-mail:</label>
+                <input type="email" name="email" class="login__input" required>
 
-            <input class="login__button" type="Submit" value="Login">
-        </form>
-    </section>
-    <section class="userAction">
-        <ul>
-            <li class="userAction__register"><a href="#" class="userAction__register--link">Register Now</a></li>
-            <li class="userAction__forgotPassword"><a href="#" class="userAction__forgotPassword--link">Forgot password?</a></li>
-        </ul>
-    </section>
+                <label for="password" class="login__label">Password</label>
+                <input type="password" name="password" class="login__input" required>
+
+                <input class="login__button" type="Submit" value="Login">
+            </form>
+        </section>
+
+        <section class="userAction">
+            <ul>
+                <li class="userAction__register"><a href="#" class="userAction__register--link">Register Now</a></li>
+                <li class="userAction__forgotPassword"><a href="#" class="userAction__forgotPassword--link">Forgot password?</a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
