@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+
+    background-image: url(../img/logBg.png);
+    background-attachment: fixed;
+}
+
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mainHeader__nav--link{
+    margin: 1rem;
+}
+
+.mainHeader__account--img{
+    margin-right: 6px;
+    position: relative;
+    top: 6px;
+}
