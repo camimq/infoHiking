@@ -5,6 +5,7 @@ body{
     background-attachment: fixed;
 }
 
+/* header begins */
 .mainHeader{
     display: flex;
     justify-content: space-between;
@@ -26,3 +27,18 @@ body{
     position: relative;
     top: 6px;
 }
+/* header ends */
+
+/* main begins */
+
+main{
+    width: 19%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border: 1px solid var(--white);
+}
+
