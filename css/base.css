@@ -3,5 +3,11 @@
     --white: #FFFFFF;
     --yellow: #FBD784;
 
-    --gilroy: 'Gilroy', sans-serif;
+    --text: 'Quicksand', sans-serif;
+    --title: 'Noto-Sans TC', sans-serif;
+}
+
+.container{
+    width: 94%;
+    margin: 0 auto;
 }
